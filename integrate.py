@@ -3,7 +3,7 @@ import math
 import matplotlib.pyplot as plt
 import numpy as np
 
-fn="x**2-x+1"
+fn="x**2+x+1"
 
 class Integrate():
     global fn
@@ -146,8 +146,8 @@ class Integrate():
 
 f=fn
 n=1000
-lower=-4
-upper=8
+lower=-5
+upper=5
 igr=Integrate()
 for method in ["trapezoid","simpson"]:
     solution=igr.solve(f,lower,upper,n,method)
